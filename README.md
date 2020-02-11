@@ -19,7 +19,11 @@ Proposal.pdf - Digital Media Design Capstone Proposal
 Defintion of Sub-directories
 
 css - Custom CSS
+
 images - Images used on the website
+
 JS - Custom JavaScript
+
 menus - Reuseable Blocks for Collapsible Menus of Instructional Content
+
 pdfs - instructional content in pdf files
