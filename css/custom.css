@@ -137,7 +137,11 @@ iframe {
 .google {
     margin-left: -150px;
 }
-#hdq_11.hdq_quiz_wrapper {
+
+#hdq_11.hdq_quiz_wrapper,
+#hdq_25.hdq_quiz_wrapper,
+#hdq_26.hdq_quiz_wrapper,
+#hdq_27.hdq_quiz_wrapper {
 	margin-left:400px;
 }
 
