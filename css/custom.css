@@ -5,70 +5,73 @@ header {
     background-color: transparent;
     background-size: cover;
     transition: all 250ms ease-in-out;
-    background-image: url("http://johnr1.sgedu.site/wp/wp-content/uploads/2019/04/boardwalk.jpg");
-    background-position: 55.36% 64.15%;
+background-image: url("http://johnr1.sgedu.site/wp/wp-content/uploads/2019/04/boardwalk.jpg");
+    	
+    background-position: 55.36% 64.15%; 
 }
 Header h2 {
-    color: white;
+	color: white;
+  padding-bottom: .5em;
 }
 nav li a {
     transition: all .5s ease-in-out;
     transition-property: background-color, color;
 }
 .wp-block-cover:hover {
-    transition: all .5s ease-in-out;
-    transition-property: opacity;
+transition: all .5s ease-in-out;	  transition-property: opacity;
     opacity: .9;
 }
-.cd-accordion__input {
-    position: absolute;
-    opacity: 0;
+.cd-accordion__input { 
+  position: absolute;
+  opacity: 0;
 }
 .cd-accordion__label {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: var(--space-sm) var(--space-md);
-    background: var(--cd-color-1);
-    box-shadow: inset 0 -1px lightness(var(--cd-color-1), 1.2);
-    color: var(--color-white);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--cd-color-1);
+  box-shadow: inset 0 -1px lightness(var(--cd-color-1), 1.2);
+  color: var(--color-white);
 }
-.cd-accordion__input {
-    position: absolute;
-    opacity: 0;
+.cd-accordion__input { 
+  position: absolute;
+  opacity: 0;
 }
 .cd-accordion__label {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  color: white;
 }
 .cd-accordion__sub_off {
-    display: none;
+  display: none; 
 }
-.cd-accordion__input:checked ~ .cd-accordion__sub {
-    display: block;
+
+.cd-accordion__input:checked ~ .cd-accordion__sub { 
+  display: block;
 }
 .accordion {
-    background-color: gray;
-    color: black;
-    cursor: pointer;
-    float: left;
-    width: 32%;
-    border: none;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
+  background-color: gray;
+  color: black;
+  cursor: pointer;
+	float: left;
+  width: 40%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
     padding-top: 1px;
     padding-bottom: 1px;
     margin-right: 20px;
-    margin-bottom: 5px;
+	  margin-bottom: 5px;
 }
+
 .accordion ul {
     list-style: none;
-    margin-left: -30px;
+	    margin-left: -30px;
 }
 .cd-accordion__sub li {
     display: block;
@@ -81,14 +84,13 @@ nav li a {
     text-decoration: none;
     font-size: 14px;
     transition: all .5s ease-in-out;
-    transition-property: background-color, color;
+    transition-property: background-color, color; 
     margin-right: 20px;
     padding: 2px;
-    margin-left: 8px;
+	  margin-left: 8px;
     /* transition in color and background-color while border changes immediately */
 }
-.accordion .cd-accordion__item--has-no-children a,
-.accordion .cd-accordion__item--has-children {
+.accordion .cd-accordion__item--has-no-children a,.accordion .cd-accordion__item--has-children {
     font-size: 16px;
     margin-right: 20px;
     padding-left: 2px;
@@ -105,8 +107,8 @@ nav li a {
 .accordion a:hover {
     color: firebrick;
     border-color: white;
-    background-color: white;
-}
+    background-color: white; 
+	}
 .accordion li a.activePage,
 .accordion li a.activePage:link,
 .accordion li a.activePage:visited,
@@ -115,73 +117,220 @@ nav li a {
     border-color: white;
     background-color: white;
 }
-iframe {
-    margin-left: 0px;
-    width: 560px;
-    height: 420px;
+.activePage,
+.introduction,
+.instructor {
+	margin-right: 2.5em;
 }
-.lessonUnit {
-    margin-left: 34%;
-    margin-right: 15.5%;
-    font-weight: bold;
+
+iframe {
+	margin-left: 0px;
+  width: 360px;
+	height: 270px;
+}
+.contactColumns .wp-block-column {
+	flex-basis: auto;	
+}
+
+.moduleColumns {
+	margin-top: 1em;
+	align-items:center;	
+}
+
+.lessonUnit,
+.quizUnit {
+  margin-left: 42%;
+	font-weight: bold;
+}
+.introUnit {
+  margin-top: -1px;
+}
+
+.hdq_quiz_wrapper {
+	margin-left:42% !important;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+ main {
+    width: 100%;
+    float: left;
+    margin: 0 1%;
+	  padding-left: 0.2em; 
+	  padding-right: 1em;
+}
+aside {
+    width: 100%;
+    float: left;
+    margin: 0 1%;
+	  padding-left: 0.2em; 
+	  padding-right: 1em;
+    padding-top: 1.5em;
+}	
+.wp-block-column {
+		flex-basis: 100% 
+}
+.accordion {
+	width: 100%;
+}
+.lessonUnit,
+.hdq_quiz_wrapper {
+	float: left;
+	margin-left:0% !important;
 }
 .quizUnit {
-    margin-left: 34%;
-    margin-right: 5.5%;
-    font-weight: bold;
+   margin-left: 0%;		
 }
-.google {
-    margin-left: -150px;
+
+nav li {
+   font-size: 0.875em;
 }
-.hdq_quiz_wrapper {
-	margin-left:400px !important;
+.logo {
+   transform: translateX(-2em);
 }
+nav li {
+   transform: translateX(-2.5em);
+}
+}
+
+@media (max-width: 568px) {
+header h2 {
+   padding-bottom: .5em;
+   line-height: 1.2em;
+	}
+nav {
+  transform: translateY(-1em);
+}
+	.contactColumns p {
+		font-size: .75em;
+	}
+}
+@media (min-width: 0px) and (max-width: 779px) {
+.wp-block-column:nth-child(1n),
+.wp-block-column:nth-child(2n) {
+    margin-left: 0em;
+	  margin-right: 0em;
+}
+}
+@media (min-width: 600px) and (max-width: 779px) {
+.wp-block-column:nth-child(1n),
+.wp-block-column:nth-child(2n) {
+    margin-left: 0em;
+	  margin-right: 0em;
+}
+}
+@media (min-width: 0px) and (max-width: 767px) {
+.introColumns {
+	float: left;
+	margin-top: 1em;
+}
+.introImage {
+  margin-bottom: -1em;
+}
+}
+@media (min-width: 768px) and (max-width: 1039px) {
+.introColumns {
+	width: 57%;
+	flex-wrap: wrap;
+}
+.introColumns .wp-block-column {
+		flex-basis: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}	
+}
+@media (min-width: 1040px)  {
+.introUnit {
+		margin-left: -2.5em;
+	  margin-right: 1em;
+	}	
+.introImage {
+}
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
-    main {
-        width: 100%;
-        float: left;
-        margin: 0 1%;
-    }
-    aside {
-        width: 50%;
-        margin: 0 1%;
-        float: left;
-        padding-top: 1.5em;
-    }
-    main img {
-        float: left;
-        max-width: 30%;
-        padding-right: 5%;
-        margin-bottom: 20px;
-    }
+ main {
+    width: 100%;
+    float: left;
+    margin: 0 1%;
+	  padding-left: 0.2em; 
+	  padding-right: 1em;
 }
+aside {
+    width: 50%;
+    float: left;
+    margin: 0 1%;
+	  padding-left: 0.2em; 
+	  padding-right: 1em;
+    padding-top: 1.5em;
+}
+}
+@media (min-width: 768px) {
+iframe {
+	margin-left: -6px;
+  width: 420px;
+	height: 315px;
+}
+.lessonUnit {
+	max-width: 420px;
+}
+}
+@media (min-width: 868px) {
+iframe {
+  margin-left: 0px;
+  width: 480px;
+	height: 360px;
+}
+.lessonUnit {
+	max-width: 480px;
+}
+}
+@media (min-width: 738px) and (max-width: 938px) {
+.googleMap iframe {
+	margin-left: .5em;
+  width: 360px; 
+	height: 270px;
+}
+}
+@media (min-width: 781px) and (max-width: 938px) {
+.googleMap iframe {
+	margin-left: -1em;
+}
+}
+
+@media (min-width: 1245px) {
+iframe {
+  width: 520px;
+	height: 390px;
+}
+.lessonUnit {
+	max-width: 520px;
+}
+}
+
 @media (min-width: 1200px) {
-    main {
-        width: 73%;
-        float: left;
-        margin: 0 1%;
-    }
-    aside {
-        width: 23%;
-        margin: 0 1%;
-        float: left;
-        padding-top: 1.5em;
-    }
-    main img {
-        float: left;
-        max-width: 35%;
-        padding-right: 5%;
-        margin-bottom: 20px;
-    }
+ main {
+    width: 73%;
+    float: left;
+    margin: 0 1%;
+}
+aside {
+    width: 23%;
+    margin: 0 1%;
+    float: left;
+    padding-top: 1.5em;
+}
+.googleMap iframe {
+	margin-left: -1em;
+}	
 }
 .hdq_result {
-    text-align: center;
-    margin-bottom: 20px;
+	text-align: center;
+  margin-bottom: 20px;
 }
 .hdq_quiz h3 {
-    margin-top: -5%;
-    margin-bottom: -1%;
+	margin-top: -5%;
+	margin-bottom: -1%;
 }
 .hdq_quiz h2 {
-    margin-top: -5%;
+	margin-top: -5%;
 }
