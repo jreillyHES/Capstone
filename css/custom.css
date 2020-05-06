@@ -243,7 +243,8 @@ nav {
 		margin-left: -2.5em;
 	  margin-right: 1em;
 	}	
-.introImage {
+.introImage p {
+	font-size:1.7em !important;	
 }
 }
 
